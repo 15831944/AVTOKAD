@@ -83,14 +83,14 @@ enum objectos{LINE = 0, RECTANGLE, CIRCLE};
 int main()
 {
     float x_start, y_start, x_end, y_end;
-    float x_mouse, y_mouse;
+    float x, y;
     objectos object = LINE;
     bool start_object = false;
     vector <Object*> p;
     vredimensiona(SCREEN_WIDTH, SCREEN_HEIGHT);
     while(1)
     {
- //       borra();
+        borra();
         menu();
         color_rgb(255, 0, 0);
         for(auto it = p.begin(); it != p.end(); it++)
